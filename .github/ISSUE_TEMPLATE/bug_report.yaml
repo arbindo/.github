@@ -22,15 +22,15 @@ body:
     validations:
       required: false
   - type: dropdown
-      id: bug-type
-      attributes:
-        label: Type of the bug
-        description: Where was bug spotted?
-        options:
-          - UI
-          - Backend
-      validations:
-        required: true
+    id: bug-type
+    attributes:
+      label: Type of the bug
+      description: Where was the bug spotted?
+      options:
+        - UI
+        - Backend
+    validations:
+      required: true
   - type: textarea
     id: steps
     attributes:
