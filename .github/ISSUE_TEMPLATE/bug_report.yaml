@@ -41,11 +41,11 @@ body:
   - type: input
     id: mimock-version
     attributes:
-      label: Mimock version
+      label: Mimock version / Docker image version
       description: Please enter the version of mimock you are using
       placeholder: e.g. mimock 0.0.1
     validations:
-      required: true
+      required: false
   - type: input
     id: os-version
     attributes:
@@ -53,4 +53,4 @@ body:
       description: Which OS version are you running `mimock` on?
       placeholder: e.g. MacOS 12.3, Ubuntu 20.04, Windows 11, etc.
     validations:
-      required: true
+      required: false
