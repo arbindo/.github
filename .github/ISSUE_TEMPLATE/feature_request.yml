@@ -1,0 +1,33 @@
+name: ⭐ Feature Request
+description: Raise a new feature request
+labels: [feature-request]
+title: "⭐ [FEATURE] < Request title >"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check if this feature request has [already been raised](./).
+  - type: textarea
+    id: what-feature
+    attributes:
+      label: Summary of the feature request
+      description: What is that one feature that will make this platform better?
+    validations:
+      required: true
+  - type: dropdown
+    id: feature-area
+    attributes:
+      label: Enhancement area
+      description: Is this is a UI or a Backed feature ?
+      options:
+        - UI
+        - Backend
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Your thoughts...
+      description: Please explain how this feature could improve the platform
+    validations:
+      required: false
