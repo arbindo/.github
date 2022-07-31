@@ -1,0 +1,36 @@
+name: Dev item
+description: Create a new DEV work item
+labels: [dev-item]
+title: "⚗️ [DEV] < Issue title >"
+body:
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Summary of the new issue
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope of the issue
+      description: What is the scope of the issue?
+    validations:
+      required: true
+  - type: checkboxes
+    id: issue-area
+    attributes:
+      label: Impacted area
+      description: What are the impacted areas ?
+      options:
+        - label: UI
+        - label: Backend
+    validations:
+      required: true
+  - type: textarea
+    id: similar
+    attributes:
+      label: Supporting artifacts
+      description: If you have supporting artifacts to assist with the Development, please mention it here
+    validations:
+      required: false
