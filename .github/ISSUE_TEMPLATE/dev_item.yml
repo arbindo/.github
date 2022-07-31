@@ -1,7 +1,7 @@
 name: 💻 Dev item
 description: Create a new DEV work item
-labels: [dev-item]
-title: "💻 [DEV] < Issue title >"
+labels: [ui,api]
+title: "💻 [API/UI] < Issue title >"
 body:
   - type: textarea
     id: summary
