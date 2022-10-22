@@ -1,0 +1,46 @@
+name: 🔓 Security Issues
+description: File an issue related to security vulnerabilities
+labels: [area/security,security vulnerability]
+title: "🔓 [SECURITY] < Issue title >"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check if this issue has [already been reported](./).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What is the issue?
+      description: Describe the security vulnerability
+    validations:
+      required: true
+  - type: textarea
+    id: log-output
+    attributes:
+      label: What is the impacted area?
+      description: Mention the area which is vulnerable
+    validations:
+      required: false
+  - type: textarea
+    id: dependency
+    attributes:
+      label: Is the issue caused by a dependency?
+      description: If the issue is within a direct dependency then please mention the details below
+    validations:
+      required: false
+  - type: input
+    id: mimock-version
+    attributes:
+      label: Mimock version / Docker image version
+      description: Please enter the version of mimock you are using
+      placeholder: e.g. mimock 0.0.1
+    validations:
+      required: false
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      description: Which OS version are you running `mimock` on?
+      placeholder: e.g. MacOS 12.3, Ubuntu 20.04, Windows 11, etc.
+    validations:
+      required: false
