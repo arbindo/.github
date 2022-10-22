@@ -1,6 +1,6 @@
 name: 🐛 Bug report
 description: File a bug report
-labels: [bug]
+labels: [type/bug]
 title: "🐛 [BUG] < Bug title >"
 body:
   - type: markdown
